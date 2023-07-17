@@ -1,0 +1,115 @@
+/* CSS for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* CSS for the pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #45a049;
+}
+
+.pagination .pagination-previous,
+.pagination .pagination-next,
+.pagination .pagination-first,
+.pagination .pagination-last {
+    background-color: #555;
+}
+
+.pagination .pagination-previous,
+.pagination .pagination-next {
+    margin: 0;
+}
+
+.pagination .pagination-first,
+.pagination .pagination-last {
+    margin-right: 8px;
+}
+
+.pagination .pagination-info {
+    margin-top: 10px;
+}
+
+.pagination .pagination-number {
+    background-color: #ddd;
+}
+
+.pagination .pagination-number:hover,
+.pagination .pagination-number:focus {
+    background-color: #bbb;
+}
+
+.pagination .pagination-current {
+    background-color: #4CAF50;
+    font-weight: bold;
+}
+
+/* CSS for the paragraph */
+p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* CSS for the heading */
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    .pagination button {
+        padding: 6px 12px;
+        margin: 0 2px;
+    }
+
+    .pagination .pagination-first,
+    .pagination .pagination-last {
+        margin-right: 4px;
+    }
+
+    .pagination .pagination-info {
+        margin-top: 6px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+}
